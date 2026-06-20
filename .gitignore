@@ -1,0 +1,57 @@
+# This is a comment. Git ignores lines starting with '#'
+
+# -------------------------------------------------------------
+# OS & System Files (Never track system-specific garbage)
+# -------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------ss----------------------------------
+# IDEs and Text Editors (Keeps your personal editor configs out)
+# -------------------------------------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+
+# -------------------------------------------------------------
+# Dependencies (Don't track external packages; fetch them via package manager)
+# -------------------------------------------------------------
+node_modules/
+/jspm_packages/
+.venv/
+env/
+
+# -------------------------------------------------------------
+# Build Artifacts & Output (Ignore compiled binaries and dist folders)
+# -------------------------------------------------------------
+dist/
+build/
+out/
+*.exe
+*.dll
+*.class
+
+# -------------------------------------------------------------
+# Logs, Caches, & Runtime Data
+# -------------------------------------------------------------
+*.log
+npm-debug.log*
+.eslintcache
+.sass-cache/
+
+# -------------------------------------------------------------
+# Security & Credentials (CRITICAL: Never commit secrets!)
+# -------------------------------------------------------------
+.env
+*.pem
+*.key
+credentials.json
+
+# -------------------------------------------------------------
+# Exceptions (The '!' sign negates a previous rule)
+# -------------------------------------------------------------
+# Ignore all .config files...
+*.config
+# ...but explicitly track this specific one anyway
+!important.config

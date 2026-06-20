@@ -1,0 +1,93 @@
+/* =========================
+   RESET CSS
+   ========================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Документ */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+/* Медіа */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Форми */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Кнопки */
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* Посилання */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Списки */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Таблиці */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Текстові елементи */
+p,
+blockquote,
+figure {
+    margin: 0;
+}
+
+/* Текстові поля */
+textarea {
+    resize: vertical;
+}
+
+/* Приховані елементи */
+[hidden] {
+    display: none !important;
+}
