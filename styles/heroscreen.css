@@ -3,12 +3,13 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
-    
+
     background-color: #46A358;
     border-radius: 6px;
     width: 100px;
     height: 35px;
-    color: #ffffff; 
+    color: #ffffff;
+
 }
 
 .button img {
@@ -19,11 +20,11 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size 16px;
+    font-size: 16px;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -41,9 +42,58 @@ nav {
 .divider {
     display: flex;
     height: 1px;
-    background-color:#dadbda;
-    max-width: 1440px; 
+    background-color: #dadbda;
+    max-width: 1440px;
     justify-content: center;
     margin: 0 auto;
-    
+
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    width: 900;
+}
+
+p {
+    display: flex;
+    max-width: 530px;
+    color: #3D3D3D;
+}
+
+.hero {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #F5F5F580
+}
+
+.hero-button {
+    background-color: #46A358;
+    border-radius: 6px;
+    width: 140px;
+    height: 40px;
+    color: #ffffff;
+    margin-top: 44px;
+}
+
+.hero-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+}
+
+
+.hero-content {
+    max-width: 1200px;
+    margin-top: 80px;
+    margin-left: 43px;
+}
+
+.divider-hover {
+    height: 3px;
+    width: 45px;
+    background-color: #46A358;
+    margin-left: 622px;
 }
