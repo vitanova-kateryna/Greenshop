@@ -19,7 +19,7 @@
 
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cera Pro', sans-serif;
     font-size: 16px;
 }
 
@@ -50,9 +50,9 @@ nav {
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cera Pro', sans-serif;
     font-size: 70px;
-    width: 900;
+    font-weight: 900;
 }
 
 p {
@@ -78,7 +78,7 @@ p {
 }
 
 .hero-text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cera Pro', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #727272;
