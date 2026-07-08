@@ -1,6 +1,9 @@
 .catalog-container {
-    display: flex;
     max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+   
+    justify-content: space-between;
 
 }
 
@@ -11,9 +14,10 @@
 
 .sidebar {
     width: 310px;
-    height: 774px;
+    height: 800px;
     background-color: #FBFBFB;
     padding: 14px 18px;
+
 }
 
 .sidebar-title {
@@ -52,6 +56,7 @@
     color:#46A358;
     font-size: 15px;
     font-weight: 700;
+    margin-left: 10px;
 }
 
 .range-line {
@@ -95,4 +100,127 @@
     border: 3px solid #ffffff;
     transform:translateY(-50%);
     left: 161px;
+}
+
+.filter-button {
+    width: 90px;
+    height: 35px;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #46A358;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 46px;
+}
+
+.filter-button:hover {
+    width: 90px;
+    height: 35px;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #5dce74;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 16px;
+    }
+
+
+.banner {
+    position: relative;
+    width: 310px;
+    height: 470px;
+    margin-left: -18px;
+    background: linear-gradient(
+        180deg,
+        rgba(70, 163, 88, 0.1) 0%,
+        rgba(54, 169, 77, 0.03) 100%
+    );
+    }
+
+.banner-text {
+    width: 100%;
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-family:'cera pro';
+    font-size: 50px;
+    font-weight: 700;
+    color: #46A358;
+}
+
+.sale-text {
+    width: 100%;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 40px;
+    font-family:'cera pro';
+    font-size: 23px;
+    font-weight: 700;
+    color: #3D3D3D; 
+}
+
+.ellipse {
+    position: absolute;
+}
+
+.ellipse-1 {
+    margin-left: 16px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 272px;
+}
+
+.ellipse-2 {
+   margin-left: 248px;
+   margin-top: 200px;
+   margin-bottom: 82px;
+   margin-right: 272px;
+}
+
+.ellipse-3 {
+   margin-left: 38px;
+   margin-top: -40px;
+   margin-bottom: 82px;
+   margin-right: 272px;
+}
+
+.products {
+    width: 838px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    margin-left:-20px;
+    align-items: center;
+
+
+}
+
+.sorting {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: -20px;
+}
+
+.sorting p {
+    margin: 0;
+}
+
+.active  {
+    font-size: 16px;
+    font-weight: 700;
+    color: #46A358;
+}
+
+.catalog-tabs a.active {
+    color: #46A358;
+    font-weight: 700;
+    border-bottom: 2px solid #46A358;
+    padding-bottom: 7px;
+
 }
