@@ -2,8 +2,9 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-   
+
     justify-content: space-between;
+    margin-bottom: 200px;
 
 }
 
@@ -37,13 +38,13 @@
 }
 
 .category-item a:hover {
-    color:#46A358;
+    color: #46A358;
     font-size: 15px;
     font-weight: 700;
 }
 
 .category-item a.active {
-    color:#46A358;
+    color: #46A358;
     font-size: 15px;
     font-weight: 700;
 }
@@ -53,7 +54,7 @@
 }
 
 .price-text span {
-    color:#46A358;
+    color: #46A358;
     font-size: 15px;
     font-weight: 700;
     margin-left: 10px;
@@ -63,7 +64,7 @@
     position: relative;
     width: 209px;
     height: 4px;
-    background-color:rgba(70, 163, 88, 0.2);
+    background-color: rgba(70, 163, 88, 0.2);
     margin-left: 6px;
     margin-bottom: 21px;
     margin-top: 20px;
@@ -74,7 +75,7 @@
     position: absolute;
     width: 161px;
     height: 4px;
-    background-color:#46A358;
+    background-color: #46A358;
     margin-left: 0px;
 }
 
@@ -86,7 +87,7 @@
     border-radius: 50%;
     background-color: #46A358;
     border: 3px solid #ffffff;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     left: -10px;
 }
 
@@ -98,7 +99,7 @@
     border-radius: 50%;
     background-color: #46A358;
     border: 3px solid #ffffff;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     left: 161px;
 }
 
@@ -123,7 +124,7 @@
     font-size: 16px;
     font-weight: 700;
     margin-top: 16px;
-    }
+}
 
 
 .banner {
@@ -131,12 +132,10 @@
     width: 310px;
     height: 470px;
     margin-left: -18px;
-    background: linear-gradient(
-        180deg,
-        rgba(70, 163, 88, 0.1) 0%,
-        rgba(54, 169, 77, 0.03) 100%
-    );
-    }
+    background: linear-gradient(180deg,
+            rgba(70, 163, 88, 0.1) 0%,
+            rgba(54, 169, 77, 0.03) 100%);
+}
 
 .banner-text {
     width: 100%;
@@ -144,7 +143,7 @@
     text-align: center;
     margin-top: 60px;
     margin-bottom: 10px;
-    font-family:'cera pro';
+    font-family: 'cera pro';
     font-size: 50px;
     font-weight: 700;
     color: #46A358;
@@ -155,10 +154,10 @@
     text-align: center;
     margin-left: 60px;
     margin-top: 40px;
-    font-family:'cera pro';
+    font-family: 'cera pro';
     font-size: 23px;
     font-weight: 700;
-    color: #3D3D3D; 
+    color: #3D3D3D;
 }
 
 .ellipse {
@@ -173,17 +172,17 @@
 }
 
 .ellipse-2 {
-   margin-left: 248px;
-   margin-top: 200px;
-   margin-bottom: 82px;
-   margin-right: 272px;
+    margin-left: 248px;
+    margin-top: 200px;
+    margin-bottom: 82px;
+    margin-right: 272px;
 }
 
 .ellipse-3 {
-   margin-left: 38px;
-   margin-top: -40px;
-   margin-bottom: 82px;
-   margin-right: 272px;
+    margin-left: 38px;
+    margin-top: -40px;
+    margin-bottom: 82px;
+    margin-right: 272px;
 }
 
 .products {
@@ -194,8 +193,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: -20px;
-    margin-left:-20px;
+    margin-left: -20px;
     align-items: center;
+    margin-bottom: 20px;
 
 
 }
@@ -211,7 +211,7 @@
     margin: 0;
 }
 
-.active  {
+.active {
     font-size: 16px;
     font-weight: 700;
     color: #46A358;
@@ -223,4 +223,69 @@
     border-bottom: 2px solid #46A358;
     padding-bottom: 7px;
 
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 33px;
+    row-gap: 120px;
+}
+
+.product-card {
+    position: relative;
+    width: 258px;
+    height: 300px;
+}
+
+.product-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #46A358;
+
+    opacity: 0;
+}
+
+.product-card:hover::before {
+    opacity: 1;
+
+}
+
+.product-card:hover .product-action {
+    opacity: 1;
+
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #46A358;
+}
+
+.image-card {
+    width: 258px;
+    height: 300px;
+    background-color: #FBFBFB;
+    margin-bottom: 10px;
+
+}
+
+.product-action {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    opacity: 0;
 }
