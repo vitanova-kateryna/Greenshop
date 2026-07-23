@@ -1,0 +1,78 @@
+.loader {
+position: fixed;
+inset: 0; /*без маржинів по краям, приліпи до країв*/
+background-color: rgba(0, 0, 0, .7);
+display: flex;
+justify-content: center; /*постав дитину по центру по горизонталі*/
+align-items: center; /*постав дитину по центру по вертикалі*/
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    color: #46A358;
+    animation: rotation 1s linear infinite; /* назва анімації. тривалість повного оберту. рівномірність обертання. тривалвсть анімації- тут безкінечність*/
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: currentColor;
+    animation: prixClipFix 2s linear infinite;
+}
+
+.spinner::after {
+    inset: 6px;
+    transform: rotate3d(90, 90, 0, 180deg);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes prixClipFix {
+    0% {
+        clip-path: polygon(
+            50% 50%,
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            0 0
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            50% 50%,
+            0 0,
+            100% 0,
+            100% 0,
+            100% 0,
+            100% 0
+        );
+    }
+
+    75%,
+    100% {
+        clip-path: polygon(
+            50% 50%,
+            0 0,
+            100% 0,
+            100% 100%,
+            0 100%,
+            0 0
+        );
+    }
+}
